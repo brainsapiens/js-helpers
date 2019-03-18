@@ -1,4 +1,4 @@
-// Description
+//TODO: Description
 function pageScrollSize() {
     return {
         x: window.innerWidth - document.documentElement.clientWidth,
