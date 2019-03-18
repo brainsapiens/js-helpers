@@ -1,5 +1,5 @@
 // Description
-function pluralize(num, decls, lang) {
+function pluralize(num, decls) {
     if (typeof num !== 'number') {
         console.warn('First argument must be a number.');
         return;
