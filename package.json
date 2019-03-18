@@ -1,0 +1,23 @@
+{
+  "name": "js-helpers",
+  "version": "1.0.0",
+  "description": "Helpers for frequently encountered actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainsapiens/js-helpers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brainsapiens/js-helpers/issues"
+  },
+  "homepage": "https://github.com/brainsapiens/js-helpers#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "mocha": "^6.0.2"
+  }
+}
