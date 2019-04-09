@@ -7,30 +7,17 @@
 <body>
 <script src="pluralize.js"></script>
 <script>
-    console.log(pluralize(0, ['day', 'days']));
-    console.log(pluralize(1, ['day', 'days']));
-    console.log(pluralize(2, ['day', 'days']));
+    for (let i = 0; i < 31; i++) {
+        console.log(pluralize(i, ['day', 'days']));
+    }
 
-    console.log(pluralize(0, ['second', 'seconds']));
-    console.log(pluralize(1, ['second', 'seconds']));
-    console.log(pluralize(2, ['second', 'seconds']));
+    for (let i = 0; i < 31; i++) {
+        console.log(pluralize(i, ['раз', 'раза']));
+    }
 
-    console.log(pluralize(0, ['раз', 'раза']));
-    console.log(pluralize(1, ['раз', 'раза']));
-    console.log(pluralize(2, ['раз', 'раза']));
-
-    console.log(pluralize(0, ['день', 'дня', 'дней']));
-    console.log(pluralize(1, ['день', 'дня', 'дней']));
-    console.log(pluralize(2, ['день', 'дня', 'дней']));
-    console.log(pluralize(3, ['день', 'дня', 'дней']));
-    console.log(pluralize(4, ['день', 'дня', 'дней']));
-    console.log(pluralize(5, ['день', 'дня', 'дней']));
-    console.log(pluralize(6, ['день', 'дня', 'дней']));
-    console.log(pluralize(10, ['день', 'дня', 'дней']));
-    console.log(pluralize(20, ['день', 'дня', 'дней']));
-    console.log(pluralize(21, ['день', 'дня', 'дней']));
-    console.log(pluralize(22, ['день', 'дня', 'дней']));
-    console.log(pluralize(25, ['день', 'дня', 'дней']));
+    for (let i = 0; i < 31; i++) {
+        console.log(pluralize(i, ['день', 'дня', 'дней']));
+    }
 </script>
 </body>
 </html>

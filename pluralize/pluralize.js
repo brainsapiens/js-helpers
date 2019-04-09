@@ -11,27 +11,26 @@ function pluralize(num, decls) {
         return;
     }
 
+    const langIsRu = /[а-я]/i.test(decls.toString().split(''));
     const lastOfNum = parseInt(num.toString().split('').pop());
 
-    if (lastOfNum === 0) {
-        if (/[а-я]/i.test(decls.toString().split(''))) {
+    if (langIsRu) {
+        if (lastOfNum === 0 || lastOfNum >= 5 || num >= 11 && num <= 14) {
             if (decls.length === 2) {
                 return `${num} ${decls[0]}`;
             } else if (decls.length === 3) {
                 return `${num} ${decls[2]}`;
             }
-        } else {
+        } else if (lastOfNum === 1) {
+            return `${num} ${decls[0]}`;
+        } else if (lastOfNum > 1 && lastOfNum <= 4) {
             return `${num} ${decls[1]}`;
         }
-    } else if (lastOfNum === 1) {
-        return `${num} ${decls[0]}`;
-    } else if (lastOfNum > 1 && lastOfNum <= 4) {
-        return `${num} ${decls[1]}`;
-    } else if (lastOfNum >= 5) {
-        if (decls.length === 2) {
+    } else {
+        if (num === 1) {
+            return `${num} ${decls[0]}`;
+        } else {
             return `${num} ${decls[1]}`;
-        } else if (decls.length === 3) {
-            return `${num} ${decls[2]}`;
         }
     }
 }
