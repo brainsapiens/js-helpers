@@ -15,7 +15,7 @@ function pluralize(num, decls) {
     const lastOfNum = parseInt(num.toString().split('').pop());
 
     if (langIsRu) {
-        if (lastOfNum === 0 || lastOfNum >= 5 || num >= 11 && num <= 14) {
+        if (lastOfNum === 0 || lastOfNum >= 5 || (num >= 11 && num <= 14)) {
             if (decls.length === 2) {
                 return `${num} ${decls[0]}`;
             } else if (decls.length === 3) {
