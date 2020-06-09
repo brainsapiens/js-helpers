@@ -1,1 +1,73 @@
-//TODO: Tests
+import pluralize from './pluralize';
+
+// Russian
+(() => {
+    const arr = ['день', 'дня', 'дней'];
+    test('1 день', () => expect(pluralize(1, arr)).toBe('1 день'));
+    test('2 дня', () => expect(pluralize(2, arr)).toBe('2 дня'));
+    test('3 дня', () => expect(pluralize(3, arr)).toBe('3 дня'));
+    test('4 дня', () => expect(pluralize(4, arr)).toBe('4 дня'));
+    test('5 дней', () => expect(pluralize(5, arr)).toBe('5 дней'));
+    test('6 дней', () => expect(pluralize(6, arr)).toBe('6 дней'));
+    test('7 дней', () => expect(pluralize(7, arr)).toBe('7 дней'));
+    test('8 дней', () => expect(pluralize(8, arr)).toBe('8 дней'));
+    test('9 дней', () => expect(pluralize(9, arr)).toBe('9 дней'));
+    test('10 дней', () => expect(pluralize(10, arr)).toBe('10 дней'));
+    test('11 дней', () => expect(pluralize(11, arr)).toBe('11 дней'));
+    test('12 дней', () => expect(pluralize(12, arr)).toBe('12 дней'));
+    test('13 дней', () => expect(pluralize(13, arr)).toBe('13 дней'));
+    test('14 дней', () => expect(pluralize(14, arr)).toBe('14 дней'));
+    test('15 дней', () => expect(pluralize(15, arr)).toBe('15 дней'));
+    test('16 дней', () => expect(pluralize(16, arr)).toBe('16 дней'));
+    test('17 дней', () => expect(pluralize(17, arr)).toBe('17 дней'));
+    test('18 дней', () => expect(pluralize(18, arr)).toBe('18 дней'));
+    test('19 дней', () => expect(pluralize(19, arr)).toBe('19 дней'));
+    test('20 дней', () => expect(pluralize(20, arr)).toBe('20 дней'));
+    test('21 день', () => expect(pluralize(21, arr)).toBe('21 день'));
+    test('22 дня', () => expect(pluralize(22, arr)).toBe('22 дня'));
+    test('23 дня', () => expect(pluralize(23, arr)).toBe('23 дня'));
+    test('24 дня', () => expect(pluralize(24, arr)).toBe('24 дня'));
+    test('25 дней', () => expect(pluralize(25, arr)).toBe('25 дней'));
+    test('26 дней', () => expect(pluralize(26, arr)).toBe('26 дней'));
+    test('27 дней', () => expect(pluralize(27, arr)).toBe('27 дней'));
+    test('28 дней', () => expect(pluralize(28, arr)).toBe('28 дней'));
+    test('29 дней', () => expect(pluralize(29, arr)).toBe('29 дней'));
+    test('30 дней', () => expect(pluralize(30, arr)).toBe('30 дней'));
+    test('31 день', () => expect(pluralize(31, arr)).toBe('31 день'));
+})();
+
+// English
+(() => {
+    const arr = ['day', 'days'];
+    test('1 day', () => expect(pluralize(1, arr)).toBe('1 day'));
+    test('2 days', () => expect(pluralize(2, arr)).toBe('2 days'));
+    test('3 days', () => expect(pluralize(3, arr)).toBe('3 days'));
+    test('4 days', () => expect(pluralize(4, arr)).toBe('4 days'));
+    test('5 days', () => expect(pluralize(5, arr)).toBe('5 days'));
+    test('6 days', () => expect(pluralize(6, arr)).toBe('6 days'));
+    test('7 days', () => expect(pluralize(7, arr)).toBe('7 days'));
+    test('8 days', () => expect(pluralize(8, arr)).toBe('8 days'));
+    test('9 days', () => expect(pluralize(9, arr)).toBe('9 days'));
+    test('10 days', () => expect(pluralize(10, arr)).toBe('10 days'));
+    test('11 days', () => expect(pluralize(11, arr)).toBe('11 days'));
+    test('12 days', () => expect(pluralize(12, arr)).toBe('12 days'));
+    test('13 days', () => expect(pluralize(13, arr)).toBe('13 days'));
+    test('14 days', () => expect(pluralize(14, arr)).toBe('14 days'));
+    test('15 days', () => expect(pluralize(15, arr)).toBe('15 days'));
+    test('16 days', () => expect(pluralize(16, arr)).toBe('16 days'));
+    test('17 days', () => expect(pluralize(17, arr)).toBe('17 days'));
+    test('18 days', () => expect(pluralize(18, arr)).toBe('18 days'));
+    test('19 days', () => expect(pluralize(19, arr)).toBe('19 days'));
+    test('20 days', () => expect(pluralize(20, arr)).toBe('20 days'));
+    test('21 days', () => expect(pluralize(21, arr)).toBe('21 days'));
+    test('22 days', () => expect(pluralize(22, arr)).toBe('22 days'));
+    test('23 days', () => expect(pluralize(23, arr)).toBe('23 days'));
+    test('24 days', () => expect(pluralize(24, arr)).toBe('24 days'));
+    test('25 days', () => expect(pluralize(25, arr)).toBe('25 days'));
+    test('26 days', () => expect(pluralize(26, arr)).toBe('26 days'));
+    test('27 days', () => expect(pluralize(27, arr)).toBe('27 days'));
+    test('28 days', () => expect(pluralize(28, arr)).toBe('28 days'));
+    test('29 days', () => expect(pluralize(29, arr)).toBe('29 days'));
+    test('30 days', () => expect(pluralize(30, arr)).toBe('30 days'));
+    test('31 days', () => expect(pluralize(31, arr)).toBe('31 days'));
+})();
